@@ -1,0 +1,554 @@
+/* Scss Document */
+
+#home .home,
+#about .about,
+#services .services,
+#sitemap .sitemap,
+#contact .contact {
+    color: #ff0004;
+}
+
+.fa {
+    box-shadow: none;
+    outline   : none !important;
+}
+
+button:focus {
+    box-shadow: none !important;
+    outline   : none !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline   : none;
+    box-shadow: none;
+}
+
+//header clasess
+header {
+    width     : 100%;
+    background: #fff !important;
+    padding   : 0px !important;
+    z-index   : 9999;
+
+    .socialBg {
+        width     : 100%;
+        padding   : 3px 0px 5px;
+        background: #d70404;
+
+        i {
+            color: #fff !important;
+        }
+
+        .cocialIcon {
+            margin-top: 8px;
+
+            a {
+                color : #fff;
+                margin: 3px 6px;
+            }
+        }
+
+        .applybg {
+            text-align: right;
+            margin-top: 6px;
+
+            a {
+                color      : #fff !important;
+                font-size  : 12 !important;
+                font-weight: 600;
+                line-height: 24px;
+                padding    : 13px 10px;
+            }
+        }
+    }
+
+    .btn-outline-primary {
+        border: 1px solid #f1f1f1;
+    }
+
+    .btn-outline-primary:hover {
+        background: transparent !important;
+        border    : 1px solid #d70404;
+    }
+
+    .topBg {
+        width     : 100%;
+        background: #fff;
+        padding   : 15px 0px;
+
+        .emailSection {
+            width: 100%;
+
+            a {
+                text-align: left !important;
+                display   : inline-block;
+
+                small {
+                    color: rgba(0, 0, 0, 0.5);
+                }
+
+                display       : inline-block !important;
+                font-size     : 14px;
+                color         : #000000;
+                margin        : 8px 25px;
+                font-weight   : 600;
+                text-transform: uppercase;
+
+                .fa {
+                    color: #d70404;
+
+                    &:hover {
+                        color: #fff !important;
+                    }
+                }
+
+                .divider1 {
+                    width     : 1px;
+                    background: #cccccc;
+                    height    : 100px;
+                }
+            }
+
+            .btn-outline-primary {
+                margin-top: -20px;
+            }
+        }
+
+        .loginbg {
+            width     : 100%;
+            background: #d70404;
+            border    : 1px solid #a70606 !important;
+        }
+    }
+
+    .menuBg {
+        background-color: #d70404;
+
+        .nav-link {
+            color        : #fff !important;
+            font-size    : 14px !important;
+            font-weight  : 600;
+            line-height  : 24px;
+            padding      : 13px 35px !important;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+            &:hover {
+                background: rgba(255, 255, 255, 0.5);
+                transition: ease-in-out 0.5s;
+            }
+        }
+
+        .searchBg {
+            background: rgba(255, 255, 255, 0.5);
+            padding   : 4px 15px 0px 15px !important;
+            display   : block;
+
+            input {
+                color: #fff !important;
+            }
+
+            .form-control {
+                font-size    : 14px;
+                width        : 345px;
+                border       : 0px;
+                background   : transparent;
+                border-bottom: 1px solid #fff;
+                border-radius: 0px;
+                outline-style: none !important;
+                color        : #fff !important;
+            }
+        }
+    }
+
+    .navbar-brand {
+        max-width : 180px !important;
+        height    : auto;
+        display   : block;
+        transition: all 0.3s ease-in-out;
+
+        img {
+            width   : 100%;
+            height  : auto;
+            overflow: hidden;
+        }
+    }
+
+    .divider {
+        width     : 1px;
+        background: #960202;
+    }
+
+    .navbar-expand-md .navbar-nav .dropdown-menu {
+        position     : absolute;
+        padding      : 0px;
+        border       : 0px;
+        border-radius: 0px;
+        box-shadow   : 1px 8px 15px rgba(0, 0, 0, 0.1);
+
+        a {
+            padding      : 10px 20px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            font-size    : 14px;
+            line-height  : 22px;
+            font-weight  : 600;
+        }
+    }
+}
+
+.header_fixer {
+    padding   : 2px 0px !important;
+    background: #fff;
+    transition: all 0.1s ease-in-out;
+    box-shadow: 0 5px 10px -10px rgba(0, 0, 0, 0.6);
+    position  : fixed;
+
+    .nav-link {
+        color      : #fff !important;
+        font-size  : 14px !important;
+        line-height: 22px;
+        padding    : 15px 15px;
+    }
+
+    .navbar-brand {
+        max-width: 100px !important;
+        height   : auto;
+        display  : block;
+
+        img {
+            width   : 100%;
+            height  : auto;
+            overflow: hidden;
+        }
+    }
+}
+
+.header_spacer {
+    width : 100%;
+    height: 180px;
+}
+
+.w-100 {
+    width  : 100% !important;
+    padding: 0px !important;
+}
+
+@media screen and(max-width:768px) {
+    header {
+        width     : 100%;
+        background: #fff !important;
+        padding   : 0px !important;
+        z-index   : 9999;
+
+        .socialBg {
+            text-align: center;
+            width     : 100%;
+            padding   : 0px;
+            background: #d70404;
+
+            .cocialIcon {
+                margin-top: 8px;
+
+                a {
+                    color : #fff;
+                    margin: 3px 6px;
+                }
+            }
+
+            .applybg {
+                text-align: center;
+                margin-top: 6px;
+
+                a {
+                    color      : #fff !important;
+                    font-size  : 12 !important;
+                    font-weight: 600;
+                    line-height: 24px;
+                    padding    : 13px 10px;
+                }
+            }
+
+            .language {
+                text-align: center;
+
+                a {
+                    color      : #fff !important;
+                    font-size  : 12 !important;
+                    font-weight: 600;
+                    line-height: 24px;
+                    padding    : 6px 5px;
+
+                    img {
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+
+        .topBg {
+            text-align: center;
+            width     : 100%;
+            background: #fff;
+            padding   : 0px 0px;
+
+            .navbar-brand {
+                margin: auto;
+            }
+
+            .emailSection {
+                display: none;
+            }
+        }
+
+        .menuBg {
+            padding: 8px 15px;
+
+            .nav-link {
+                color        : #fff !important;
+                font-size    : 14px !important;
+                font-weight  : 600;
+                line-height  : 24px;
+                padding      : 6px 15px !important;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            }
+        }
+
+        .navbar-brand {
+            max-width : 180px !important;
+            height    : auto;
+            display   : block;
+            transition: all 0.3s ease-in-out;
+
+            img {
+                width   : 100%;
+                height  : auto;
+                overflow: hidden;
+            }
+        }
+
+        .divider {
+            width     : 1px;
+            background: #49d16f;
+        }
+
+        .navbar-expand-md .navbar-nav .dropdown-menu {
+            position     : absolute;
+            padding      : 0px;
+            border       : 0px;
+            border-radius: 0px;
+            box-shadow   : 1px 8px 15px rgba(0, 0, 0, 0.1);
+
+            a {
+                padding      : 5px 15px;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                font-size    : 14px;
+                line-height  : 22px;
+                font-weight  : 600;
+            }
+        }
+    }
+
+    .header_spacer {
+        width : 100%;
+        height: 160px;
+    }
+}
+
+@media screen and(max-width:768px) {
+    header {
+        width     : 100%;
+        background: #fff !important;
+        padding   : 0px !important;
+        z-index   : 9999;
+
+        .socialBg {
+            text-align: center;
+            width     : 100%;
+            padding   : 0px;
+            background: #d70404;
+
+            .cocialIcon {
+                margin-top: 8px;
+
+                a {
+                    color : #fff;
+                    margin: 3px 6px;
+                }
+            }
+
+            .applybg {
+                text-align: center;
+                margin-top: 6px;
+
+                a {
+                    color      : #fff !important;
+                    font-size  : 12 !important;
+                    font-weight: 600;
+                    line-height: 24px;
+                    padding    : 13px 10px;
+                }
+            }
+
+            .language {
+                text-align: center;
+
+                a {
+                    color      : #808487 !important;
+                    font-size  : 12 !important;
+                    font-weight: 600;
+                    line-height: 24px;
+                    padding    : 6px 5px;
+
+                    img {
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+
+        .topBg {
+            text-align: center;
+            width     : 100%;
+            background: #fff;
+            padding   : 0px 0px;
+
+            .navbar-brand {
+                margin: auto;
+            }
+
+            .emailSection {
+                display: none;
+            }
+        }
+
+        .menuBg {
+            padding: 8px 15px;
+
+            .nav-link {
+                color        : #fff !important;
+                font-size    : 14px !important;
+                font-weight  : 600;
+                line-height  : 24px;
+                padding      : 6px 15px !important;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            }
+        }
+
+        .navbar-brand {
+            max-width : 180px !important;
+            height    : auto;
+            display   : block;
+            transition: all 0.3s ease-in-out;
+
+            img {
+                width   : 100%;
+                height  : auto;
+                overflow: hidden;
+            }
+        }
+
+        .divider {
+            width     : 1px;
+            background: #49d16f;
+        }
+
+        .navbar-expand-md .navbar-nav .dropdown-menu {
+            position     : absolute;
+            padding      : 0px;
+            border       : 0px;
+            border-radius: 0px;
+            box-shadow   : 1px 8px 15px rgba(0, 0, 0, 0.1);
+
+            a {
+                padding      : 5px 15px;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                font-size    : 14px;
+                line-height  : 22px;
+                font-weight  : 600;
+            }
+        }
+    }
+
+    .header_spacer {
+        width : 100%;
+        height: 160px;
+    }
+}
+
+@media screen and(max-width:480px) {
+    header {
+        width     : 100%;
+        background: #fff !important;
+        padding   : 0px !important;
+        z-index   : 9999;
+
+        .socialBg {
+            text-align: center;
+            width     : 100%;
+            padding   : 6px 0px;
+            background: #d70404;
+
+            .cocialIcon {
+                a {
+                    color : #fff;
+                    margin: 3px 6px;
+                }
+            }
+        }
+
+        .topBg {
+            text-align: center;
+            width     : 100%;
+            background: #fff;
+            padding   : 15px 0px;
+        }
+
+        .menuBg {
+            padding: 8px 15px;
+
+            .nav-link {
+                color        : #fff !important;
+                font-size    : 14px !important;
+                font-weight  : 600;
+                line-height  : 24px;
+                padding      : 6px 15px !important;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            }
+        }
+
+        .navbar-brand {
+            max-width : 180px !important;
+            height    : auto;
+            display   : block;
+            transition: all 0.3s ease-in-out;
+
+            img {
+                width   : 100%;
+                height  : auto;
+                overflow: hidden;
+            }
+        }
+
+        .divider {
+            width     : 1px;
+            background: #49d16f;
+        }
+
+        .navbar-expand-md .navbar-nav .dropdown-menu {
+            position     : absolute;
+            padding      : 0px;
+            border       : 0px;
+            border-radius: 0px;
+            box-shadow   : 1px 8px 15px rgba(0, 0, 0, 0.1);
+
+            a {
+                padding      : 5px 15px;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                font-size    : 14px;
+                line-height  : 22px;
+                font-weight  : 600;
+            }
+        }
+    }
+}
